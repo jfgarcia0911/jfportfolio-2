@@ -3,11 +3,25 @@
 
 /* globals.css */
 .animated-gradient {
-  animation: gradientShift 8s ease infinite;
+  animation: gradientShift 5s ease infinite;
   background-size: 200% 200%;
 }
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+.animated-complex-gradient {
+  background: linear-gradient(90deg, 
+    #3a4cc4 0%, 
+    #5a70dd 50%, 
+    #61bec5 100%);
+  background-size: 200% 100%;
+  animation: gradientFlow 5s ease infinite alternate; /* "alternate" for smoother loop */
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }

@@ -27,14 +27,14 @@ export default function Navbar() {
                         {link.name}
                     </a>
                 ))}
-                <button className='inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-700 rounded-full text-lg cursor-pointer'>
+                <button className='inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-[#483cf5] rounded-full text-lg cursor-pointer'>
                     Contact
                 </button>
             </nav>
         </div>
 
         {/* Mobile Screen */}
-        <div className={`${isOpen ? 'block':'hidden'} md:hidden bg-[#801b9c] absolute top-0 left-0 w-full h-screen flex flex-col items-center justify-center space-y-8 pt-16`}>
+        <div className={`${isOpen ? 'block':'hidden'} md:hidden bg-[#2f1694] absolute top-0 left-0 w-full h-screen flex flex-col items-center justify-center space-y-8 pt-16`}>
             {/* Close Button */}
             <button className='absolute top-5 right-5 text-white' onClick={()=>setIsOpen(false)}>
                 <FiX className="w-8 h-8" />
@@ -44,7 +44,7 @@ export default function Navbar() {
                 <a key={link.id} href={link.link} className='text-lg text-white hover:text-gray-400' onClick={()=>setIsOpen(false)}>{link.name}</a>
             ))}
             {/* Contact button  */}
-            <button className='inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg cursor-pointer'>Contact</button>
+            <button className='inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-[#483cf5] rounded-full text-lg cursor-pointer'>Contact</button>
                 
         </div>
       
