@@ -28,7 +28,7 @@ export default function Navbar() {
                     </a>
                 ))}
                 <button className='inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-[#483cf5] rounded-full text-lg cursor-pointer'>
-                    Contact
+                    <a href="#contact">Contact</a>
                 </button>
             </nav>
         </div>

@@ -5,7 +5,8 @@ import project3 from '/project3.png'
 
 const ProjectCard = ({ image, title, description, link }) => {
     return (
-        <article className='relative max-w-sm bg-gray-800 rounded overflow-hidden shadow-lg group'>
+
+        <article  className='relative max-w-sm bg-gray-800 rounded overflow-hidden shadow-lg group'>
             <div className='absolute z-0 w-40 h-40 sm:w-60 sm:h-60  bg-[#483cf5] rounded-full blur-3xl opacity-50 -top-5 left-10'>
             </div>
 
@@ -70,8 +71,8 @@ export default function Projects() {
         }
     ];
   return (
-    <main className='p-4 '>
-        <section data-aos='fade-up' data-aos-delay='300'>
+    <main id='projects' className='p-4 '>
+        <section  data-aos='fade-up' data-aos-delay='300'>
             <header className='text-center'>
                 <h1 className='text-3xl text-white sm:text-4xl font-bold mb-6'>
                     My <span className='text-blue-400'>Projects</span>
