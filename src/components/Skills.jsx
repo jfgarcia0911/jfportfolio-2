@@ -26,7 +26,7 @@ const skillsData = [
 
 
 const SkillBox=({image,title,description})=>(
-    <article className='bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg text-center hover:bg-purple-800 transition-all duration-300'>
+    <article className='bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg text-center hover:bg-blue-800 transition-all duration-300'>
         <figure className='flex justify-center mb-4'>
             <img src={image} alt={title} className='w-16 h-16 sm:w-20 sm:h-20' />
         </figure>
@@ -47,7 +47,7 @@ export default function Skills() {
         <div data-aos='fade-up' data-aos-delay='300' className='relative z-20 text-center space-y-6 sm:space-y-10'>
             <header>
                 <h1 className='text-3xl sm:text-4xl font-bold'>
-                    My expertise <br/> and <span className='text-purple-400'>Skills</span>
+                    My expertise <br/> and <span className='text-blue-400'>Skills</span>
                 </h1>
                 <p className='text-gray-400 mt-2 sm:mt-4 text-sm sm:text-base'>
                     Lorem ipsume dolor sit amet consectetur, adipisicing elit. Beatae culpa perspiciatics atque placeat tempore qua eligemdi quasi error!
