@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: "/jfportfolio-2"
+  base: "/jf2-portfolio"
 })
