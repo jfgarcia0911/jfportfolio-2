@@ -8,19 +8,23 @@ import mongodb from '/mongodb.png'
 import icon_react from '/icon_react.png'
 import tailwindcss from '/tailwindcss.png'
 import vue from '/vue.png'
+import nextjs from '/nextjs.png'
 import imghero from '/imghero.png'
 
 
 const skillsData = [
-    {id:1, image:angular, title:'Angular ', description:'Lorem ipsum dolor sit amet, cinsectetur aduoicing eli. Ipsam, beatae?'},
-    {id:2, image:bootstrap, title:'Bootstrap', description:'Lorem ipsum dolor sit amet, cinsectetur aduoicing eli. Ipsam, beatae?'},
-    {id:3, image:css3, title:'CSS3', description:'Lorem ipsum dolor sit amet, cinsectetur aduoicing eli. Ipsam, beatae?'},
-    {id:4, image:html, title:'HTML', description:'Lorem ipsum dolor sit amet, cinsectetur aduoicing eli. Ipsam, beatae?'},
-    {id:5, image:javascript, title:'Javascript', description:'Lorem ipsum dolor sit amet, cinsectetur aduoicing eli. Ipsam, beatae?'},
-    {id:6, image:mongodb, title:'Mongo DB', description:'Lorem ipsum dolor sit amet, cinsectetur aduoicing eli. Ipsam, beatae?'},
-    {id:7, image:icon_react, title:'React js', description:'Lorem ipsum dolor sit amet, cinsectetur aduoicing eli. Ipsam, beatae?'},
-    {id:8, image:tailwindcss, title:'Tailwindcss', description:'Lorem ipsum dolor sit amet, cinsectetur aduoicing eli. Ipsam, beatae?'},
-    {id:9, image:vue, title:'Vue js', description:'Lorem ipsum dolor sit amet, cinsectetur aduoicing eli. Ipsam, beatae?'}
+    
+    {id:1, image:icon_react, title:'React js', description:'Developed component-based applications with React, focusing on reusable and scalable code.'},
+    
+    {id:2, image:bootstrap, title:'Bootstrap', description:'Used Bootstrap to create responsive layouts and reusable UI components efficiently.'},
+    {id:3, image:css3, title:'CSS3', description:'Crafted modern, responsive designs with custom styling, animations, and layouts.'},
+    {id:4, image:html, title:'HTML', description:'Developed semantic and accessible web pages with clean, structured markup.'},
+    {id:5, image:javascript, title:'Javascript', description:'Implemented interactive features and logic to enhance user experience.'},
+    {id:6, image:mongodb, title:'Mongo DB', description:'Worked with non-relational databases to store and retrieve data for web applications.'},
+    {id:7, image:angular, title:'Angular ', description:'Built dynamic single-page applications with Angular, implementing routing, data binding, and form validation.'},
+    {id:8, image:tailwindcss, title:'Tailwindcss', description:'Styled projects with utility-first CSS for fast and consistent design development.'},
+    {id:9, image:vue, title:'Vue.js', description:'Explored Vue for building reactive, simple user interfaces and small-scale applications.'},
+    {id:10, image:nextjs, title:'Next.js', description:'Built fast, SEO-friendly applications with server-side rendering, static site generation, and API routes for full-stack functionality.'}
 ];
 
 

@@ -21,28 +21,28 @@ export default function Hero() {
                 John Garcia
               </h1>
               <h2 className='text-xl sm:text-4xl md:text-2xl font-bold text-[#0a176c] md:text-[#6662d2] mb-2'>
-                Frontend Developer
+                💻 Frontend Developer | Turning ideas into interactive web experiences
               </h2>
             </header>
             <p className='text-base sm:text-lg md:text-lg text-gray-200 mb-6'>
-              Lorem ipsum fawknfo w afkwn ffawogiwhgiwgn awfnwaighiawks fnawighwi
-              Lorem ipsum fawknfo w afkwn ffawogiwhgiwgn awfnwaighiawks fnawighwi
+              Passionate about building responsive, user-friendly web applications with modern technologies like React, Angular, and Tailwind CSS.
+
             </p>
 
             <div className='flex items-center space-x-4 mb-6'>
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/jfgarcia0911?tab=repositories" target="_blank" rel="noopener noreferrer">
                 <img src={github} alt="github" className='w-11 h-11' />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src={linkedin} alt="github" className='w-11 h-11' />
+              <a href="https://www.linkedin.com/in/john-francis-garcia-09web/" target="_blank" rel="noopener noreferrer">
+                <img src={linkedin} alt="linkedin" className='w-11 h-11' />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src={facebook} alt="github" className='w-11 h-11' />
+              <a href="https://www.facebook.com/jfgarcia09" target="_blank" rel="noopener noreferrer">
+                <img src={facebook} alt="facebook" className='w-11 h-11' />
               </a>
               
             </div>
             <a href={john} download>
-              <button className='inline-flex text-white border-2 py-2 px-6 focus:outlibe-none hover:bg-[#483cf5] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-lg'>
+              <button className='inline-flex text-white border-2 py-2 px-6 focus:outlibe-none hover:bg-[#483cf5] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-lg cursor-pointer'>
                 Download CV
               </button>
             </a>

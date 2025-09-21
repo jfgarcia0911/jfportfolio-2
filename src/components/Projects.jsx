@@ -1,70 +1,45 @@
 import React from 'react'
-import project1 from '/project1.png'
-import project2 from '/project2.png'
-import project3 from '/project3.png'
+import amazon from '/amazon.png'
+import portfolio from '/webportfolio2023.png'
+import portfolio2 from '/portfolio2.png'
 
-const ProjectCard = ({ image, title, description, link }) => {
-    return (
-
-        <article  className='relative max-w-sm bg-gray-800 rounded overflow-hidden shadow-lg group'>
-            <div className='absolute z-0 w-40 h-40 sm:w-60 sm:h-60  bg-[#483cf5] rounded-full blur-3xl opacity-50 -top-5 left-10'>
-            </div>
-
-            <div className='relative z-10 '>
-                <figure className='relative'>
-                    <img src={image} alt={title} className='w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110' />
-                    <a href={link} target='_blank' rel='noopener noreferrer' className='absolute inset-0 h-[202px] flex items-center justify-center bg-blue-800 bg-opacity-50 opacity-0 group-hover:opacity-80 transition-opacity duration-300'>
-                        <button className='bg-white font-medium text-black py-2 px-4 rounded-3xl shadow hover:text-white hover:bg-[#2879d5]'>
-                            Live Preview
-                        </button>
-                    </a>
-                </figure>
-                <div className='px-6 py-4'>
-                    <header>
-                        <h3 className='text-white font-bold text-xl mb-2'>{title}</h3>
-                    </header>
-                    <p className='text-gray-200 text-base'>{description}</p>
-                </div>
-            </div>
-        </article>
-    )
-};
+import ProjectCard from './ProjectCard.jsx'
 
 
 export default function Projects() {
 
     const listProjects = [
         {
-            image: project1,
-            title: 'Project One',
-            description: 'This is a brief description of Project One.',
-            link: 'https://example.com/project1'
+            image: amazon,
+            title: 'Amazon Clone App',
+            description: 'A full-stack e-commerce web application inspired by Amazon. Features include product listings, category-based search, detailed product pages, authentication, cart management, and order tracking. Built with React, Next.js, Firebase, and Tailwind CSS, the app delivers a responsive and user-friendly shopping experience.',
+            link: 'https://github.com/jfgarcia0911/amazon-clone'
         },
         {
-            image: project2,
-            title: 'Project Two',
-            description: 'This is a brief description of Project Two.',
-            link: 'https://example.com/project2'
+            image: portfolio,
+            title: 'Web Portfolio 2023',
+            description: 'A personal portfolio website built with pure HTML and CSS. It showcases your projects, skills, and experience with a clean and responsive design.',
+            link: 'https://jfgarcia0911.github.io/webportfolio2023/'
         },
         {
-            image: project3,
-            title: 'Project Three',
-            description: 'This is a brief description of Project Three.',
-            link: 'https://example.com/project3'
+            image: portfolio2,
+            title: 'Web Portfolio 2025',
+            description: 'A modern, responsive portfolio website built with React 19 and Vite, featuring sleek animations and optimized performance. This portfolio showcases my work and skills with a clean, professional design.',
+            link: 'https://jfgarcia0911.github.io/jfportfolio-2/'
         },{
-            image: project1,
+            image: amazon,
             title: 'Project One',
             description: 'This is a brief description of Project One.',
             link: 'https://example.com/project1'
         },
         {
-            image: project2,
+            image: portfolio,
             title: 'Project Two',
             description: 'This is a brief description of Project Two.',
             link: 'https://example.com/project2'
         },
         {
-            image: project3,
+            image: portfolio2,
             title: 'Project Three',
             description: 'This is a brief description of Project Three.',
             link: 'https://example.com/project3'
@@ -78,14 +53,17 @@ export default function Projects() {
                     My <span className='text-blue-400'>Projects</span>
                 </h1>
                 <p className='text-gray-400 mt-2 sm:mt-4 text-sm sm:text-base'>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae culpa perspiciatis atque placeat tempore qua eligendi quasi error!
+                    Here are some of the projects I’ve built, showcasing my skills in frontend development, responsive design, and modern web technologies.
+
                 </p>
             </header>
         </section>
         <section data-aos='fade-up' data-aos-delay='500' className='flex flex-wrap gap-4 justify-center mt-6 '>
-            {listProjects.map((project,index) => (
+            {listProjects.map((project,index) =>
+           (
                 <ProjectCard 
                     key={index} 
+                    value={index}
                     image={project.image} 
                     title={project.title} 
                     description={project.description} 
