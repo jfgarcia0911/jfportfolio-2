@@ -1,10 +1,10 @@
-import React from 'react'
-import img_about from '/img_about.png'
-import img_about1 from '/img_about1.png'
-import img_about2 from '/img_about2.png'
+import React from "react";
+import img_about from "/img_about.png";
+import img_about1 from "/img_about1.png";
+import img_about2 from "/img_about2.png";
 
 export default function About() {
-  return (
+	return (
 		<section
 			id="about"
 			className="min-h-screen overflow-hidden flex items-center justify-center text-white px-4 sm:px-6 -z-10 "
@@ -45,21 +45,26 @@ export default function About() {
 						</h1>
 					</header>
 					<p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed">
-						Aspiring web developer with a strong desire to learn and
-						grow in the field. Adept in HTML, CSS, and JavaScript,
-						with a track record of creating mobile-responsive
-						websites and building e-commerce APIs using Node,
-						Express.js and React.js. Committed to continuously
-						learning and improving my skills to deliver high-quality
-						web solutions.
+						I’m John Garcia, a frontend developer passionate about
+						creating modern, responsive, and scalable web
+						applications. My journey started with training in React,
+						Angular, and full-stack development, leading me to work
+						with Accenture where I contributed to building and
+						improving enterprise applications. I enjoy turning ideas
+						into reality through code. Whether it’s developing user
+						interfaces, ensuring smooth functionality, or working
+						with databases. I’m constantly learning new technologies
+						and sharpening my skills with the goal of becoming a
+						well-rounded full-stack developer.
 					</p>
 					<footer>
 						<button className="inline-flex text-white border-2 py-2 px-4 sm:px-6 focus:outline-none hover:bg-[#483cf5] hover:shadow-[0_0_40px_rgba(128,0128,0.7)] rounded-full text-sm sm:text-lg">
-							Learn More
+							
+                            <a href="#projects">Learn More</a>
 						</button>
 					</footer>
 				</article>
 			</div>
 		</section>
-  );
+	);
 }
