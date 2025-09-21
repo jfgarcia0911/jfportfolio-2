@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import {FiMenu, FiX} from 'react-icons/fi'
 
 export default function Navbar() {
@@ -9,8 +9,41 @@ export default function Navbar() {
         {id:3, name:'Skills', link:'#skills'},
         {id:4, name:'My projects', link:'#projects'},
     ]
+    const [isVisible, setIsVisible] = useState("up");
+	const lastScrollY = useRef(0);
+    useEffect(() => {
+		const handleScroll = () => {
+			const currentScrollY = window.scrollY;
+			// setScrollY(currentScrollY);
+
+			// Determine scroll direction
+			if (currentScrollY <= 50) {
+				setIsVisible("up");
+			} else if (
+				currentScrollY < lastScrollY.current &&
+				currentScrollY > 100
+			) {
+				setIsVisible("up");
+			} else if (
+				currentScrollY > lastScrollY.current &&
+				currentScrollY > 100
+			) {
+				setIsVisible("down");
+			}
+			// Update the ref with current position for next comparison
+			lastScrollY.current = currentScrollY;
+		};
+		window.addEventListener("scroll", handleScroll);
+		// Cleanup the event listener when the component unmounts
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []); // Empty dependency array means this effect runs once on mount and cleans up on unmount
+
     return (
-    <header className='fixed top-0 left-0 w-full z-20 text-white' data-aos='fade-up' data-aos-delay='300'>
+    <header className={`fixed top-0 left-0 w-full z-50 text-white' data-aos='fade-up' data-aos-delay='300  ${
+					isVisible === "up" ? "translate-y-0" : "-translate-y-full"
+				}`}>
         <div className=' mx-auto flex items-center justify-between p-5'>
             {/* {LOGO} */}
             <a href="#home" className='text-4xl font-bold italic text-white'>Portfolio</a>
@@ -21,7 +54,7 @@ export default function Navbar() {
             </button>
 
             {/* Desktop Navigation */}
-            <nav className='hidden md:flex  items-center space-x-7'>
+            <nav className='hidden md:flex  items-center space-x-7 text-white'>
                 {NavbarLinks.map((link)=>(
                     <a key={link.id} href={link.link} className='hover:text-gray-300 text-lg'>
                         {link.name}
