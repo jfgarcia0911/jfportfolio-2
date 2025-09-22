@@ -2,6 +2,7 @@ import React from 'react'
 import amazon from '/amazon.png'
 import portfolio from '/webportfolio2023.png'
 import portfolio2 from '/portfolio2.png'
+import authDemo from '/auth-demo.png'
 
 import ProjectCard from './ProjectCard.jsx'
 
@@ -27,16 +28,16 @@ export default function Projects() {
             description: 'A modern, responsive portfolio website built with React 19 and Vite, featuring sleek animations and optimized performance. This portfolio showcases my work and skills with a clean, professional design.',
             link: 'https://jfgarcia0911.github.io/jfportfolio-2/'
         },{
-            image: amazon,
-            title: 'Project One',
-            description: 'This is a brief description of Project One.',
-            link: 'https://example.com/project1'
+            image: authDemo,
+            title: 'Firebase Authentication Demo',
+            description: 'A modern Next.js application that demonstrates seamless Firebase authentication integration with a clean, responsive UI. This demo showcases user management features including secure login/logout flows, profile display, and dynamic avatar handling.',
+            link: 'https://github.com/jfgarcia0911/firebase-auth-demo'
         },
         {
             image: portfolio,
-            title: 'Project Two',
-            description: 'This is a brief description of Project Two.',
-            link: 'https://example.com/project2'
+            title: 'FB Clone',
+            description: 'A full-stack social media application inspired by Facebook, built with modern web technologies to replicate core social networking features including story sharing, image posts, and real-time interactions.',
+            link: 'https://github.com/jfgarcia0911/fb-clone'
         },
         {
             image: portfolio2,
