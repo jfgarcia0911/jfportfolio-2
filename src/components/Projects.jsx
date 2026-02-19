@@ -5,6 +5,7 @@ import portfolio2 from "/portfolio2.png";
 import authDemo from "/auth-demo.png";
 import jobseeker from "/jobseeker.png";
 import fbclone from "/fbclone.png";
+import devConnect from "/dev-connect.png";
 
 import ProjectCard from "./ProjectCard.jsx";
 
@@ -25,6 +26,15 @@ export default function Projects() {
 				"A full-stack social media application inspired by Facebook, built with modern web technologies to replicate core social networking features including story sharing, image posts, and real-time interactions.",
 			link: "https://github.com/jfgarcia0911/fb-clone",
 			code: "https://github.com/jfgarcia0911/fb-clone",
+		},
+		{
+			image: devConnect,
+			title: "Developer Social Platform",
+			description:
+				"Developer Social Platform is a full-stack web application that allows developers to create profiles, publish posts, and interact with other users in a community-driven environment. The application is built using the MERN stack (MongoDB, Express, React, Node.js), with Redux for global state management and RESTful API integration.",
+
+			link: "https://github.com/jfgarcia0911/devconnectorFrontend",
+			code: "https://github.com/jfgarcia0911/devconnectorBackend",
 		},
 		{
 			image: portfolio2,
