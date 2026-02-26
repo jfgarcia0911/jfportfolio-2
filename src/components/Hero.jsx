@@ -41,11 +41,6 @@ export default function Hero() {
               </a>
               
             </div>
-            <a href={john} download>
-              <button className='inline-flex text-white border-2 py-2 px-6 focus:outlibe-none hover:bg-[#483cf5] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-lg cursor-pointer'>
-                Download CV
-              </button>
-            </a>
           </section>
           <figure data-aos='fade-up' data-aos-delay='500' className='flex-1 flex justify-center md:justify-end mt-0'>
             <img src={imghero} alt="Hero Image" className='h-[300px] sm:h-[400px] md:h-[485px] w-[250px] sm:w-[480px] object-cover rounded-lg' />
