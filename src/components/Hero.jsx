@@ -4,7 +4,6 @@ import imghero from '/imghero.png'
 import facebook from '/facebook.png'
 import github from '/github.png'
 import linkedin from '/linkedin.png'
-import john from '/John.pdf'
 
 export default function Hero() {
   return (
